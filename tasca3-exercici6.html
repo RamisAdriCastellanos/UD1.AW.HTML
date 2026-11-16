@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 6 - Taula A. Estructura</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman";
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            height: 270px;
+            border: 1px solid gray;
+            border-spacing: 2px;
+        }
+
+        td {
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        .blau {
+            background-color: blue;
+            width: 38%;
+            height: 125px;
+            vertical-align: top;
+        }
+
+        .groc {
+            background-color: yellow;
+            height: 125px;
+            vertical-align: top;
+        }
+
+        .vermell {
+            background-color: red;
+            height: 30px;
+            text-align: left;
+        }
+
+        .gris {
+            background-color: gray;
+            height: 30px;
+            text-align: right;
+        }
+
+        .rosa {
+            background-color: #ff0050;
+            width: 48%;
+            height: 122px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .verd {
+            background-color: #00e85a;
+            height: 122px;
+            text-align: right;
+            vertical-align: bottom;
+        }
+
+        .lila {
+            background-color: #5100f5;
+            height: 62px;
+        }
+
+        .peu {
+            background-color: #b7cbd8;
+            height: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Menú</h2>
+
+    <ol>
+        <li><a href="#taula-a">Taula A. Estructura</a></li>
+        <li><a href="#taula-b">Taula B. Resultat</a></li>
+        <li><a href="#objecte-insertat">Objecte Insertat</a></li>
+    </ol>
+
+    <div style="text-align:center;" id="taula-a">
+        Taula A. Estructura
+    </div>
+
+    <table>
+
+        <tr>
+            <td class="blau" rowspan="2">
+                Aquí va el formulari
+            </td>
+
+            <td class="vermell">
+                Aquí provar alguns estils de lletres
+            </td>
+        </tr>
+
+        <tr>
+            <td class="gris">
+                Aquí provar tots els tipus d'enllaços
+            </td>
+        </tr>
+
+        <tr>
+            <td class="groc">
+                Inserirem un altre taula
+            </td>
+
+            <td style="padding:0; border:0;">
+
+                <table style="width:100%; height:100%; margin:0; border:0;">
+
+                    <tr>
+                        <td class="rosa">
+                            Exemple de llistes ordenades
+                        </td>
+
+                        <td class="verd">
+                            Exemple de llistes desordenades
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="lila" colspan="2">
+                Inserirem una imatge
+            </td>
+        </tr>
+
+        <tr>
+            <td class="peu" colspan="2">
+                Aquí hi anirà el codi font
+            </td>
+        </tr>
+
+    </table>
+
+    <div id="taula-b"></div>
+    <div id="objecte-insertat"></div>
+
+</body>
+</html>
